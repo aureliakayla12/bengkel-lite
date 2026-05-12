@@ -28,10 +28,10 @@
                 <td>{{ $v->no_hp }}</td>
                 <td>{{ $v->alamat }}</td>
                 <td>
-                    <form action="{{route('customer.destroy', $v->customer_id)}}" method="POST" style="display: inline">
+                    <form action="{{route('pelanggan.destroy', $v->pelanggan_id)}}" method="POST" style="display: inline">
                         {{csrf_field()}}
                         @method('DELETE')
-                    <a href="{{route('customer.edit', $v->customer_id)}}" class="btn btn-success btn-sm">Edit</a>
+                    <a href="{{route('pelanggan.edit', $v->pelanggan_id)}}" class="btn btn-success btn-sm">Edit</a>
                     <button type="submit" onclick="return confirm('Are you sure want to delete this customer?')" class="btn btn-danger btn-sm">Delete</button>
                     </form>
                 </td>

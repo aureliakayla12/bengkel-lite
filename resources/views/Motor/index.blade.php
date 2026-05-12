@@ -25,16 +25,16 @@
                             @foreach ($motor as $v)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $v->pelanggan->name ?? '-' }}</td>
+                                    <td>{{ $v->pelanggan->nama ?? '-' }}</td>
                                     <td>{{ $v->merk }}</td>
                                     <td>{{ $v->tipe }}</td>
-                                    <td>{{ $v->plat_motor }}</td>
+                                    <td>{{ $v->plat_nomor }}</td>
                                     <td>
-                                        <form action="{{route('motor.destroy', $v->customer_id)}}" method="POST"
+                                        <form action="{{route('motor.destroy', $v->motor_id)}}" method="POST"
                                             style="display: inline">
                                             {{csrf_field()}}
                                             @method('DELETE')
-                                            <a href="{{route('customer.edit', $v->customer_id)}}"
+                                            <a href="{{route('motor.edit', $v->motor_id)}}"
                                                 class="btn btn-success btn-sm">Edit</a>
                                             <button type="submit"
                                                 onclick="return confirm('Are you sure want to delete this customer?')"

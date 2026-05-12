@@ -14,12 +14,12 @@ class Motor extends Model
         'pelanggan_id', 
         'merk',
         'tipe',
-        'plat_motor'
+        'plat_nomor'
     ];
 
      public function pelanggan()
     {
-        return $this->belongsTo(Pelanggan::class);
+        return $this->belongsTo(Pelanggan::class, 'pelanggan_id');
     }
 
     public function servis()

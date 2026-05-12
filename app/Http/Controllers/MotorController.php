@@ -14,7 +14,7 @@ class MotorController extends Controller
      */
     public function index()
     {
-        $motor = Motor::all();
+        $motor = Motor::with('pelanggan')->get();
         return view('motor.index', compact('motor'));
     }
 

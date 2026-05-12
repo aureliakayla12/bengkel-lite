@@ -26,11 +26,11 @@
                                     <td>{{ $v->nama }}</td>
                                     <td>{{ $v->no_hp }}</td>
                                     <td>
-                                        <form action="{{route('mekanik.destroy', $v->customer_id)}}" method="POST"
+                                        <form action="{{route('mekanik.destroy', $v->mekanik_id)}}" method="POST"
                                             style="display: inline">
                                             {{csrf_field()}}
                                             @method('DELETE')
-                                            <a href="{{route('mekanik.edit', $v->customer_id)}}"
+                                            <a href="{{route('mekanik.edit', $v->mekanik_id)}}"
                                                 class="btn btn-success btn-sm">Edit</a>
                                             <button type="submit"
                                                 onclick="return confirm('Are you sure want to delete this customer?')"
