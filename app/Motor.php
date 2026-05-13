@@ -19,7 +19,7 @@ class Motor extends Model
 
      public function pelanggan()
     {
-        return $this->belongsTo(Pelanggan::class, 'pelanggan_id');
+        return $this->belongsTo(Pelanggan::class, 'pelanggan_id', 'pelanggan_id');
     }
 
     public function servis()

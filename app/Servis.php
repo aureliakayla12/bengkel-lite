@@ -25,17 +25,17 @@ class Servis extends Model
 
      public function pelanggan()
     {
-        return $this->belongsTo(Pelanggan::class);
+        return $this->belongsTo(Pelanggan::class, 'pelanggan_id', 'pelanggan_id');
     }
 
     public function motor()
     {
-        return $this->belongsTo(Motor::class);
+        return $this->belongsTo(Motor::class, 'motor_id', 'motor_id');
     }
 
     public function mekanik()
     {
-        return $this->belongsTo(Mekanik::class);
+        return $this->belongsTo(Mekanik::class, 'mekanik_id', 'mekanik_id');
     }
 
     public function sparepart()

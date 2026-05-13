@@ -18,7 +18,7 @@ class Pelanggan extends Model
 
     public function motor()
     {
-        return $this->hasMany(Motor::class);
+        return $this->hasMany(Motor::class, 'pelanggan_id', 'pelanggan_id');
     }
 
     public function servis()

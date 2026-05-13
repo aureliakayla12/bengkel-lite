@@ -14,5 +14,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PelangganSeeder::class);
         $this->call(MotorSeeder::class);
         $this->call(MekanikSeeder::class);
+        $this->call(SparepartSeeder::class);
+        $this->call(ServisSeeder::class);
     }
 }

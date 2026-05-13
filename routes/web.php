@@ -51,7 +51,15 @@ Route::delete('/mekanik/{id}', [MekanikController::class, 'destroy'])->name('mek
 // Form Sparepart
 Route::get('/sparepart', [SparepartController::class, 'index'])->name('sparepart.index');
 Route::get('/sparepart/create', [SparepartController::class, 'create'])->name('sparepart.create');
+Route::post('/sparepart', [SparepartController::class, 'store'])->name('sparepart.store');
+Route::get('/sparepart/{id}/edit', [SparepartController::class, 'edit'])->name('sparepart.edit');
+Route::put('/sparepart/{id}', [SparepartController::class, 'update'])->name('sparepart.update');
+Route::delete('/sparepart/{id}', [SparepartController::class, 'destroy'])->name('sparepart.destroy');
 
 // Form Servis
 Route::get('/servis', [ServisController::class, 'index'])->name('servis.index');
 Route::get('/servis/create', [ServisController::class, 'create'])->name('servis.create');
+Route::post('/servis', [ServisController::class, 'store'])->name('servis.store');
+Route::get('/servis/{id}/edit', [ServisController::class, 'edit'])->name('servis.edit');
+Route::put('/servis/{id}', [ServisController::class, 'update'])->name('servis.update');
+Route::delete('/servis/{id}', [ServisController::class, 'destroy'])->name('servis.destroy');

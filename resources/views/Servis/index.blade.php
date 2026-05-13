@@ -29,9 +29,9 @@
                             @foreach ($servis as $v)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $v->pelanggan->name ?? '-' }}</td>
-                                    <td>{{ $v->motor->name ?? '-' }}</td>
-                                    <td>{{ $v->mekanik->name ?? '-' }}</td>
+                                    <td>{{ $v->pelanggan->nama ?? '-' }}</td>
+                                    <td>{{ $v->motor->merk ?? '-' }}</td>
+                                    <td>{{ $v->mekanik->nama ?? '-' }}</td>
                                     <td>{{ $v->tanggal_servis }}</td>
                                     <td>{{ $v->keluhan }}</td>
                                     <td>{{ $v->biaya_jasa }}</td>

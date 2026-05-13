@@ -14,7 +14,7 @@ class ServisController extends Controller
      */
     public function index()
     {
-        $servis = Servis::all();
+        $servis = Servis::with(['pelanggan', 'motor', 'mekanik'])->get();
         return view('servis.index', compact('servis'));
     }
 

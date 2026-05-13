@@ -14,7 +14,7 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
+                                <th>Nama Sparepart</th>
                                 <th>Harga</th>
                                 <th>Stok</th>
                                 <th>Aksi</th>
